@@ -1,0 +1,11 @@
+1. if you see any question asking the number of ways that something can happen given some n value. Always try to find what happens when n=0,1,2... .. There is a high possibility that the question
+	is a mathematical pattern like the fibonacci sequence or more famously the catalan numbers
+	
+2. When you see a problem where the input is a linear data structure and you are asked to find the longest/shortest substring, subarray, or a desired value. 
+	There is a sliding window involved most probably
+	
+3. When we have to deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints
+	And the set of elements in the array is a pair, a triplet, or even a subarray. We should be probably be using the two pointer method
+
+4. The problem will deal with a loop in a linked list or array
+	When you need to know the position of a certain element or the overall length of the linked list. Then you should think about using the slow and fast pointer technique
