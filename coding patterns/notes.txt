@@ -8,4 +8,40 @@
 	And the set of elements in the array is a pair, a triplet, or even a subarray. We should be probably be using the two pointer method
 
 4. The problem will deal with a loop in a linked list or array
-	When you need to know the position of a certain element or the overall length of the linked list. Then you should think about using the slow and fast pointer technique
+	When you need to know the position of a certain element or the overall length of the linked list. Then you should think about using the slow and fast pointer technique.
+	Thus, whenever there is a question of finding out of some cycle in a linear data structure try to think about slow and fast pointers.
+	
+5. If you’re asked to produce a list with only mutually exclusive intervals
+	If you hear the term “overlapping intervals”. Then you might think of using the pattern merge intervals
+	
+6. They will be problems involving a sorted array with numbers in a given range
+	If the problem asks you to find the missing/duplicate/smallest number in an sorted/rotated array. 
+	In this case you have a problem that deals with cyclic sort.
+	
+	Also, we should note that when the questions has input which has a given set of numbers within a given range, that is definitely a cyclic sort problem.
+	If the range given is [1,N], then its easy to understand that index=value-1 when every value is at their correct position.
+	
+7. If you’re asked to traverse a tree in a level-by-level fashion (or level order traversal) then this must be a BFS based question.
+
+8. If you’re asked to traverse a tree with in-order, preorder, or postorder DFS
+	If the problem requires searching for something where the node is closer to a leaf, then use DFS
+	
+9. When the input given is such that we can divide the input into two parts where from one part we need the maximum and from the other we need the minimum.
+	In that case , there might be a possibility of using the two heaps coding pattern.
+	
+	Also, if the input is such that every element has two properties: P1 and P2 such that P1 is directly proportional to P2.
+	And we have to find min(P1) and max(P2), we need the two heaps coding pattern.
+	
+10. Problems where you need to find the combinations or permutations of a given set, use the subset pattern.
+
+11. Whenever you are given a sorted array, linked list, or matrix, and are asked to find a certain element, the best algorithm you can use is the Binary Search.
+
+12. Any problem that asks us to find the top/smallest/frequent ‘K’ elements among a given set falls under this pattern. This is where you can use a heap/priority queue.
+	How to identify the Top ‘K’ Elements pattern:
+		If you’re asked to find the top/smallest/frequent ‘K’ elements of a given set
+		If you’re asked to sort an array to find an exact element
+		
+13. K-way Merge helps you solve problems that involve a set of sorted arrays.
+	Whenever you’re given ‘K’ sorted arrays, you can use a Heap to efficiently perform a sorted traversal of all the elements of all arrays. 
+	You can push the smallest element of each array in a Min Heap to get the overall minimum. After getting the overall minimum, 
+	push the next element from the same array to the heap. Then, repeat this process to make a sorted traversal of all elements.
